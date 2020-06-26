@@ -20,8 +20,8 @@ body:before {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 }
 
 .content {
