@@ -1,8 +1,29 @@
-body {
+/* body {
   background-image: url(https://media.giphy.com/media/LlFOVCul3pz6SiBzB5/giphy.gif);
   background-size: cover;
   color: white;
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
+} */
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(https://media.giphy.com/media/LlFOVCul3pz6SiBzB5/giphy.gif) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.content {
+  margin: auto;
   text-align: center;
 }
 
@@ -11,6 +32,9 @@ body {
   font-size: 4vw;
   font-weight: 900;
   font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-align: center;
 }
 
 .lyrics {
@@ -19,8 +43,10 @@ body {
   width: 75%;
   margin: auto;
   padding: 1vw;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
   border-radius: 10px;
-  font-size: 2vw;
+  font-size: 2.5vw;
   margin-bottom: 0;
   margin-top: 30px;
   font-weight: 600;
@@ -38,10 +64,15 @@ footer {
   background-color: transparent;
   color: white;
   text-align: center;
-  font-size: 1.125vw;
+  font-size: 2vw;
 }
 
 .footer-text a {
   color: inherit;
   text-decoration: none;
+  font-size: 2vw;
+}
+
+.links {
+  font-size: 2vw;
 }
