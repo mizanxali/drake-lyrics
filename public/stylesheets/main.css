@@ -42,7 +42,7 @@ body:before {
   text-align: center;
   width: 75%;
   margin: auto;
-  padding: 1vw;
+  padding: 20px;
   font-family: 'Montserrat', sans-serif;
   color: white;
   border-radius: 10px;
@@ -65,6 +65,7 @@ footer {
   color: white;
   text-align: center;
   font-size: 2vw;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer-text a {
