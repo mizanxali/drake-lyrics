@@ -23,7 +23,7 @@ router.get("/", function(req, res){
 	            arr.splice(i, 1);
 	        }
 	    }
-	    var num = Math.floor(Math.random() * arr.length);
+	    var num = Math.floor(Math.random() * (arr.length-3));
 			bars = [
 				arr[num],
 				arr[num+1],
