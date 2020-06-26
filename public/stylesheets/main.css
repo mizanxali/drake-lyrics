@@ -20,11 +20,14 @@ body:before {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
 .content {
   margin: auto;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .content h1 {
