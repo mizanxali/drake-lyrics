@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Drake Lyrics</title>
+    <script src="https://kit.fontawesome.com/2f6c17ff2c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+  </head>
+  <body>
+    <div class="content">
+      <h1>DRAKE LYRICS</h1>
+      <div class="lyrics">
+        <% bars.forEach((item, i) => { %>
+          <p><%=item%></p>
+        <%});%>
+      </div>
+      <br>
+      <button class="btn btn-outline-light btn-lg" type="button" onClick="window.location.reload();">GENERATE</button>
+    </div>
+    <footer>
+      <span class="footer-text">lyrics via <a href="https://genius.com/">genius</a> · developed by mizanxali </span>
+      <span class="links">
+        <a class="btn btn-outline-light" href="https://github.com/mizanxali">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="btn btn-outline-light" href="https://www.instagram.com/mizanxali/">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="btn btn-outline-light" href="https://twitter.com/mizanxali">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="btn btn-outline-light" href="https://www.linkedin.com/in/mizanxali/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </span>
+    </footer>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </body>
+</html>
