@@ -39,6 +39,6 @@ router.get("/", function(req, res){
 	});
 });
 
-router.listen(3000, function(){
-  console.log("Starting server on port 3000");
+router.listen(process.env.PORT || 3000, process.env.IP, function(){
+  console.log("server is listening...");
 });
