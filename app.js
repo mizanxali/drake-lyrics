@@ -166,12 +166,12 @@ const songNames = [{title: "Omertà", spotifyURI: "3kCwyvhvVTyehIzYN2I0nF"},
 									 {title: "The Calm", spotifyURI: "6MlGqWzDiLkZ0vmAEsisEk"},
 									 {title: "Brand New", spotifyURI: "4XTXamS1g4g93jPxyuFJJ6"},
 									 {title: "Congratulations", spotifyURI: "3SnXwQUrvSacFziUYXTNKY"}];
-
+									 
 router.get("/", function(req, res){
 	let bars;
 	let randomSong = Math.floor(Math.random() * songNames.length);
 	const options = {
-		apiKey: '2egTOxo3Kzb_prKK0GXjaBvOEmo2jWGTumEayUsTMlRqgJLykhou7SM5WfWgjCWt',
+		apiKey: process.env.geniusAPIkey,
 		title: songNames[randomSong].title,
 		artist: 'Drake',
 		optimizeQuery: false
