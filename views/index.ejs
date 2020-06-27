@@ -15,7 +15,7 @@
         <i class="fas fa-quote-left"></i>
         <div class="bars">
           <% bars.forEach((item, i) => { %>
-            <p><%=item%></p>
+            <p id="bar<%=i%>"><%=item%></p>
           <%});%>
         </div>
         <i class="fas fa-quote-right"></i>
@@ -25,7 +25,10 @@
       <iframe src="https://open.spotify.com/embed/track/<%=randomSong.spotifyURI%>" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       <br>
       <button class="btn btn-outline-light btn-lg" type="button" onClick="copy()"><i class="fas fa-clipboard"></i>  COPY</button>
-      <button class="btn btn-outline-light btn-lg" type="button" onClick="window.location.reload();"><i class="fas fa-rocket"></i>  GENERATE</button>
+      <a class="btn btn-outline-light btn-lg twitter-share-button"><i class="fab fa-twitter"></i>  TWEET</a>
+      <br>
+      <br>
+      <button class="btn btn-light btn-lg" type="button" onClick="window.location.reload();"><i class="fas fa-rocket"></i>  GENERATE</button>
     </div>
     <div class="footer">
       <div class="footer-text">lyrics via <a href="https://genius.com/">genius</a> · developed by mizanxali </div>
