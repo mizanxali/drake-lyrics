@@ -15,11 +15,14 @@
         <% bars.forEach((item, i) => { %>
           <p><%=item%></p>
         <%});%>
+        <h5><%=randomSong.title%></h5>
       </div>
+      <br>
+      <iframe src="https://open.spotify.com/embed/track/<%=randomSong.spotifyURI%>" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       <br>
       <button class="btn btn-outline-light btn-lg" type="button" onClick="window.location.reload();">GENERATE</button>
     </div>
-    <footer>
+    <div class="footer">
       <div class="footer-text">lyrics via <a href="https://genius.com/">genius</a> · developed by mizanxali </div>
       <div class="links">
         <a class="btn btn-outline-light" href="https://github.com/mizanxali">
@@ -35,6 +38,5 @@
           <i class="fab fa-linkedin"></i>
         </a>
       </div>
-    </footer>
   </body>
 </html>
