@@ -53,7 +53,6 @@ const songNames = [{title: "Omertà", spotifyURI: "3kCwyvhvVTyehIzYN2I0nF"},
 									 {title: "Get It Together", spotifyURI: "7y6c07pgjZvtHI9kuMVqk1"},
 									 {title: "Madiba Riddim", spotifyURI: "76gUmNLXGQVOsGhfcshkFP"},
 									 {title: "Blem", spotifyURI: "2XlHu0HcujBCkWMdIAvrqt"},
-									 {title: "4422", spotifyURI: "2fkeWbM6iqTw7oGHTYm2lw"},
 									 {title: "Gyalchester", spotifyURI: "6UjfByV1lDLW0SOVQA4NAi"},
 									 {title: "Skepta Interlude", spotifyURI: "2dfqS3MRtbLZSZA1IL8xY5"},
 									 {title: "Portland", spotifyURI: "2bjwRfXMk4uRgOD9IBYl9h"},
@@ -166,7 +165,7 @@ const songNames = [{title: "Omertà", spotifyURI: "3kCwyvhvVTyehIzYN2I0nF"},
 									 {title: "The Calm", spotifyURI: "6MlGqWzDiLkZ0vmAEsisEk"},
 									 {title: "Brand New", spotifyURI: "4XTXamS1g4g93jPxyuFJJ6"},
 									 {title: "Congratulations", spotifyURI: "3SnXwQUrvSacFziUYXTNKY"}];
-									 
+
 router.get("/", function(req, res){
 	let bars;
 	let randomSong = Math.floor(Math.random() * songNames.length);
