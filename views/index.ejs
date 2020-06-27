@@ -18,7 +18,7 @@
     <link rel="manifest" href="site.webmanifest">
     <script src="https://kit.fontawesome.com/<%=process.env.fontawesomekey%>.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/main.css">
   </head>
   <body>
@@ -27,11 +27,13 @@
       <div class="lyrics">
         <i class="fas fa-quote-left"></i>
         <div class="bars">
+          <br>
           <% bars.forEach((item, i) => { %>
             <p id="bar<%=i%>"><%=item%></p>
           <%});%>
         </div>
         <i class="fas fa-quote-right"></i>
+        <br>
         <h5><%=randomSong.title%></h5>
       </div>
       <br>
