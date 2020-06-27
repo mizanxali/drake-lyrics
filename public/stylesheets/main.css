@@ -84,3 +84,11 @@ body:before {
   text-decoration: none;
   font-size: 12px;
 }
+
+.fa-quote-left {
+  float: left;
+}
+
+.fa-quote-right {
+  float: right; 
+}
