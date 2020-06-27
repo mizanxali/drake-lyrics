@@ -12,15 +12,18 @@
     <div class="content">
       <h1>DRAKE LYRICS</h1>
       <div class="lyrics">
-        <% bars.forEach((item, i) => { %>
-          <p><%=item%></p>
-        <%});%>
+        <div class="bars">
+          <% bars.forEach((item, i) => { %>
+            <p><%=item%></p>
+          <%});%>
+        </div>
         <h5><%=randomSong.title%></h5>
       </div>
       <br>
       <iframe src="https://open.spotify.com/embed/track/<%=randomSong.spotifyURI%>" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       <br>
-      <button class="btn btn-outline-light btn-lg" type="button" onClick="window.location.reload();">GENERATE</button>
+      <button class="btn btn-outline-light btn-lg" type="button" onClick="copy()"><i class="fas fa-clipboard"></i>  COPY</button>
+      <button class="btn btn-outline-light btn-lg" type="button" onClick="window.location.reload();"><i class="fas fa-rocket"></i>  GENERATE</button>
     </div>
     <div class="footer">
       <div class="footer-text">lyrics via <a href="https://genius.com/">genius</a> · developed by mizanxali </div>
@@ -38,5 +41,6 @@
           <i class="fab fa-linkedin"></i>
         </a>
       </div>
+      <script src="/scripts/main.js" charset="utf-8"></script>
   </body>
 </html>
