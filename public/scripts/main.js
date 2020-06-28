@@ -14,6 +14,8 @@ setInterval(function(){
     root.style.setProperty('--bggif', "url(https://media.giphy.com/media/l41lIsOThQpma23wA/giphy.gif)");
   }else if(document.getElementById('gif7').checked) {
     root.style.setProperty('--bggif', "url(https://media.giphy.com/media/3o85xKWHrNvXqAvWMM/giphy.gif)");
+  }else if(document.getElementById('gifno').checked) {
+    root.style.setProperty('--bggif', "#3c4146");
   }
 }, 10);
 
