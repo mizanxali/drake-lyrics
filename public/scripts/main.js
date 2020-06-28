@@ -7,15 +7,15 @@ let theLyrics = bar0 + ", " + bar1 + ", " + bar2 + ", " + bar3;
 tweetButton.setAttribute("href", "https://twitter.com/intent/tweet?text="+ theLyrics);
 
 let root = document.documentElement;
-const bggifs = ["url(../gif0.gif)", "url(../gif2.gif)", "url(../gif7.gif)"];
-let c = 1;
 setInterval(function(){
-  root.style.setProperty('--bggif', bggifs[c]);
-  c++;
-  if(c==bggifs.length){
-    c=0;
+  if(document.getElementById('gif0').checked) {
+    root.style.setProperty('--bggif', "url(../gif0.gif)");
+  }else if(document.getElementById('gif2').checked) {
+    root.style.setProperty('--bggif', "url(../gif2.gif)");
+  }else if(document.getElementById('gif7').checked) {
+    root.style.setProperty('--bggif', "url(../gif7.gif)");
   }
-}, 5000);
+}, 10);
 
 function copy() {
     let dummy = document.createElement("textarea");
