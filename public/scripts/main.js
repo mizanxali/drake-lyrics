@@ -9,11 +9,11 @@ tweetButton.setAttribute("href", "https://twitter.com/intent/tweet?text="+ theLy
 let root = document.documentElement;
 setInterval(function(){
   if(document.getElementById('gif0').checked) {
-    root.style.setProperty('--bggif', "url(../gif0.gif)");
+    root.style.setProperty('--bggif', "url(https://media.giphy.com/media/LlFOVCul3pz6SiBzB5/giphy.gif)");
   }else if(document.getElementById('gif2').checked) {
-    root.style.setProperty('--bggif', "url(../gif2.gif)");
+    root.style.setProperty('--bggif', "url(https://media.giphy.com/media/l41lIsOThQpma23wA/giphy.gif)");
   }else if(document.getElementById('gif7').checked) {
-    root.style.setProperty('--bggif', "url(../gif7.gif)");
+    root.style.setProperty('--bggif', "url(https://media.giphy.com/media/3o85xKWHrNvXqAvWMM/giphy.gif)");
   }
 }, 10);
 
