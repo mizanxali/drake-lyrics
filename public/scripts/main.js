@@ -6,6 +6,17 @@ let bar3 = document.getElementById("bar3").innerText;
 let theLyrics = bar0 + ", " + bar1 + ", " + bar2 + ", " + bar3;
 tweetButton.setAttribute("href", "https://twitter.com/intent/tweet?text="+ theLyrics);
 
+let root = document.documentElement;
+const bggifs = ["url(../gif0.gif)", "url(../gif2.gif)", "url(../gif7.gif)"];
+let c = 1;
+setInterval(function(){
+  root.style.setProperty('--bggif', bggifs[c]);
+  c++;
+  if(c==bggifs.length){
+    c=0;
+  }
+}, 5000);
+
 function copy() {
     let dummy = document.createElement("textarea");
     // dummy.style.display = 'none'
