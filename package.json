@@ -1,0 +1,17 @@
+{
+  "name": "drake-lyrics",
+  "version": "1.0.0",
+  "description": "Randomly generate Drake lyrics for social media captions.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "client": "npm start --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Mizan Ali",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "genius-lyrics-api": "^3.0.6"
+  }
+}
