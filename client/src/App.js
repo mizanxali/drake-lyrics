@@ -1,4 +1,3 @@
-import { getLyrics } from 'genius-lyrics-api'
 import React, { useEffect, useRef, useState } from 'react'
 import Spinner from './Spinner'
 import axios from 'axios'
@@ -20,7 +19,6 @@ const App = () => {
     setState({loading: true})
     axios.get('api/lyrics')
     .then(res => {
-      console.log(res.data)
       setState({
         bars: res.data.bars,
         randomSong: res.data.randomSong,
