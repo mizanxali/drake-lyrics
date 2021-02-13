@@ -61,7 +61,7 @@ const App = () => {
       <br />
 	  <br />
       {!state.loading && <button className="btn btn-outline-light btn-lg shadow-none" type="button" onClick={copyLyrics}><i className="fas fa-clipboard"></i>  COPY</button>}
-      {!state.loading && <a href={'https://twitter.com/intent/tweet?text="' + state.theLyrics} className="btn btn-outline-light btn-lg shadow-none twitter-share-button"><i className="fab fa-twitter"></i>  TWEET</a>}
+      {!state.loading && <a href={'https://twitter.com/intent/tweet?text=' + state.theLyrics} className="btn btn-outline-light btn-lg shadow-none twitter-share-button"><i className="fab fa-twitter"></i>  TWEET</a>}
       <br />
       <br />
       {!state.loading && <button className="btn btn-light btn-lg shadow-none" type="button" onClick={fetchLyrics}><i className="fas fa-rocket"></i>  GENERATE</button>}
